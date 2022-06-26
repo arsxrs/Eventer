@@ -1,0 +1,39 @@
+{
+    "screen": {
+        "width": 1920,
+        "Height": 1080
+    },
+    "resources": [
+        {
+            "name": "Instagram like",
+            "description": "Open first instagram post, click on the button, don't touch the mouse",
+            "postfix": "",
+            "repeat": 5,
+            "actions": [
+                {
+                    "name": "Press like",
+                    "description": "",
+                    "command": "click_image",
+                    "image":["images/instagram_like_post.png"],
+                    "coordinate_type": "absolute",
+                    "x": 0,
+                    "y": 0,
+                    "delay": 1,
+                    "active" : 1
+                },
+                {
+                    "name": "Click on the next video",
+                    "description": "",
+                    "command": "click_image",
+                    "image":[
+                           "images/instagram_next_post.png"],
+                    "coordinate_type": "absolute",
+                    "x": 0,
+                    "y": 0,
+                    "delay": 0.7,
+                    "active" : 1
+                }
+            ]
+        }
+    ]
+}
